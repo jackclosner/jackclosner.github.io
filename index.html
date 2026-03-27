@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active & Energetic | My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;700;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .heading-font {
+            font-family: 'Bungee', cursive;
+        }
+        .bg-orange-gradient {
+            background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md border-b-4 border-orange-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="heading-font text-2xl text-orange-600 tracking-tighter italic">FAST & ACTIVE</span>
+                </div>
+                <div class="hidden md:block space-x-8">
+                    <a href="#about" class="font-bold text-gray-700 hover:text-orange-500">About Me</a>
+                    <a href="#hobbies" class="font-bold text-gray-700 hover:text-orange-500">Interests</a>
+                    <a href="#travel" class="font-bold text-gray-700 hover:text-orange-500">Travels</a>
+                    <a href="#contact" class="bg-orange-500 text-white px-4 py-2 rounded-full font-bold hover:bg-orange-600">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-orange-gradient text-white py-20 px-4 text-center overflow-hidden relative">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+            <svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#pattern-circles)" /></svg>
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <div class="inline-block bg-white text-orange-600 px-4 py-1 rounded-full text-sm font-black mb-4 uppercase tracking-widest">
+                Student of the Month @ Bryan Collegiate
+            </div>
+            <h1 class="heading-font text-5xl md:text-7xl mb-6 leading-tight">CHASING ADVENTURE & FAST TRUCKS</h1>
+            <p class="text-xl md:text-2xl font-medium opacity-90 max-w-2xl mx-auto mb-8">
+                High schooler, animal lover, and Ravens fan. If I'm not catching a snake or a mouse, I'm probably at a game or camping in the wild.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#about" class="bg-white text-orange-600 px-8 py-3 rounded-xl font-black text-lg shadow-xl hover:scale-105 transition-transform">Bio & Story</a>
+                <a href="https://bchs.bryanisd.org/" target="_blank" class="bg-orange-800 text-white px-8 py-3 rounded-xl font-black text-lg shadow-xl flex items-center gap-2 hover:bg-orange-900">
+                    <i class="fas fa-graduation-cap"></i> BCHS Webpage
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="heading-font text-4xl text-orange-600 mb-6">Student of the Month</h2>
+                    <!-- Placeholder for Student of the Month Photo -->
+                    <div class="relative w-full aspect-[4/5] bg-gray-200 rounded-3xl overflow-hidden shadow-2xl border-8 border-orange-100 flex items-center justify-center group">
+                        <span class="text-gray-400 absolute text-center px-4 font-bold group-hover:hidden">PHOTO: ME HOLDING MY STUDENT OF THE MONTH PICTURE</span>
+                        <!-- img src="YOUR_PHOTO_HERE.jpg" alt="Student of the Month" class="w-full h-full object-cover" -->
+                        <div class="text-orange-500 text-6xl opacity-20"><i class="fas fa-award"></i></div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="p-6 bg-orange-50 rounded-2xl border-l-8 border-orange-500">
+                        <h3 class="heading-font text-xl mb-2 italic text-orange-700 underline">THE BIO</h3>
+                        <p class="text-lg leading-relaxed text-gray-700">
+                            I'm a student at <strong><a href="https://bchs.bryanisd.org/" class="text-orange-600 underline">Bryan Collegiate High School</a></strong> where I was recently honored as Student of the Month! I'm known for being <strong>fast and active</strong>—I don't sit still for long. 
+                        </p>
+                        <p class="mt-4 text-lg leading-relaxed text-gray-700">
+                            My life is built on energy, faith, and the outdoors. I spent years in <strong>Trail Life Troop 12</strong>, a national scouting organization that taught me how to survive and thrive in the woods. One of my favorite memories was an annual summer camping trip at a Colorado State Park where our troop was actually featured on the news in 2022!
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-blue-600 text-white p-6 rounded-2xl shadow-lg flex flex-col items-center justify-center text-center">
+                            <span class="heading-font text-xl mb-2">FAVORITE TEAM</span>
+                            <i class="fas fa-football-ball text-4xl mb-2"></i>
+                            <span class="font-bold text-lg">BALTIMORE RAVENS</span>
+                        </div>
+                        <div class="bg-orange-500 text-white p-6 rounded-2xl shadow-lg flex flex-col items-center justify-center text-center">
+                            <span class="heading-font text-xl mb-2">FAVORITE COLOR</span>
+                            <div class="w-12 h-12 rounded-full bg-white shadow-inner mb-2"></div>
+                            <span class="font-bold text-lg uppercase tracking-widest">ORANGE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Clip Section -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h3 class="heading-font text-3xl mb-4 text-orange-400">TROOP 12 ON THE NEWS</h3>
+            <p class="mb-8 text-gray-300">Camping at Colorado State Park (July/August 2022). This was a huge highlight for us!</p>
+            <div class="aspect-video bg-gray-800 rounded-3xl overflow-hidden border-4 border-gray-700 flex items-center justify-center relative group">
+                <!-- Video Placeholder -->
+                <div class="text-center p-8">
+                    <i class="fas fa-play-circle text-6xl text-orange-500 mb-4 opacity-50"></i>
+                    <p class="text-gray-400">[VIDEO CLIP: LOCAL COLORADO NEWS 2022]</p>
+                    <p class="text-sm text-gray-500 italic mt-2">Replace this container with your YouTube/Vimeo embed code</p>
+                </div>
+            </div>
+            <div class="mt-6">
+                <a href="https://www.traillifeusa.com/" target="_blank" class="text-orange-400 font-bold hover:underline italic">Visit Trail Life USA National Site →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies: Airsoft & Animals -->
+    <section id="hobbies" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="heading-font text-4xl text-center mb-16 underline decoration-orange-500 decoration-8">INTERESTS & HOBBIES</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Animal Catching -->
+                <div class="bg-white p-8 rounded-3xl shadow-xl card-hover border-t-8 border-green-500">
+                    <div class="text-green-500 text-4xl mb-4"><i class="fas fa-frog"></i></div>
+                    <h3 class="heading-font text-2xl mb-4">ANIMAL CATCHER</h3>
+                    <p class="text-gray-600 mb-6 italic">"If it crawls or scurries, I've probably caught it."</p>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div class="bg-gray-200 rounded-lg aspect-square flex flex-col items-center justify-center text-[10px] text-center p-1">ARMADILLO PHOTO</div>
+                        <div class="bg-gray-200 rounded-lg aspect-square flex flex-col items-center justify-center text-[10px] text-center p-1">SNAKE PHOTO</div>
+                        <div class="bg-gray-200 rounded-lg aspect-square flex flex-col items-center justify-center text-[10px] text-center p-1 font-bold">MOUSE IN TRAILER</div>
+                        <div class="bg-gray-200 rounded-lg aspect-square flex flex-col items-center justify-center text-[10px] text-center p-1 italic">Freaking out my sisters!</div>
+                    </div>
+                </div>
+
+                <!-- Airsoft -->
+                <div class="bg-white p-8 rounded-3xl shadow-xl card-hover border-t-8 border-orange-500">
+                    <div class="text-orange-500 text-4xl mb-4"><i class="fas fa-crosshairs"></i></div>
+                    <h3 class="heading-font text-2xl mb-4">AIRSOFT PRO</h3>
+                    <p class="text-gray-600 mb-6">I used to be really into airsoft. When I'm looking for gear, I'm usually browsing the shelves at:</p>
+                    <ul class="space-y-3 font-bold">
+                        <li class="flex items-center gap-2"><i class="fas fa-shopping-cart text-orange-500"></i> <a href="https://www.evike.com/" class="hover:underline">Evike.com</a></li>
+                        <li class="flex items-center gap-2"><i class="fas fa-shopping-cart text-orange-500"></i> <a href="https://www.academy.com/" class="hover:underline">Academy Sports</a></li>
+                        <li class="flex items-center gap-2"><i class="fas fa-shopping-cart text-orange-500"></i> Pro Shop</li>
+                    </ul>
+                </div>
+
+                <!-- Slushy Section -->
+                <div class="bg-white p-8 rounded-3xl shadow-xl card-hover border-t-8 border-blue-400">
+                    <div class="text-blue-500 text-4xl mb-4"><i class="fas fa-glass-whiskey"></i></div>
+                    <h3 class="heading-font text-2xl mb-4">THE SLUSHY STOP</h3>
+                    <p class="text-gray-600 mb-4">My favorite place to refuel is a <strong><a href="https://txbstores.com/" class="underline decoration-blue-500">TXB Gas Station</a></strong>. The order is always the same:</p>
+                    <div class="bg-blue-50 p-4 rounded-xl border-2 border-blue-100 mb-4">
+                        <p class="font-black text-blue-800 text-center">BLUE SLUSHY WITH NERDS</p>
+                    </div>
+                    <div class="bg-gray-200 rounded-xl aspect-video flex items-center justify-center text-xs text-center p-4">
+                        [PICTURE OF BLUE SLUSHY WITH NERDS]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pets Section -->
+    <section class="py-20 bg-orange-500 text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="heading-font text-4xl mb-12 italic">MEET MY PETS</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-white text-gray-900 p-8 rounded-[40px] shadow-2xl relative">
+                    <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-white px-6 py-2 rounded-full font-black text-orange-500 shadow-md">TONY</div>
+                    <div class="w-32 h-32 mx-auto bg-gray-200 rounded-full mb-6 border-4 border-orange-500 flex items-center justify-center overflow-hidden">
+                        <!-- img src="TONY_PHOTO.jpg" class="w-full h-full object-cover" -->
+                        <i class="fas fa-turtle text-4xl text-orange-300"></i>
+                    </div>
+                    <h4 class="heading-font text-2xl mb-2">Softshell Slider</h4>
+                    <p class="font-medium">I caught Tony myself in the creek near my house!</p>
+                </div>
+                <div class="bg-white text-gray-900 p-8 rounded-[40px] shadow-2xl relative">
+                    <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-white px-6 py-2 rounded-full font-black text-orange-500 shadow-md">PICKLES</div>
+                    <div class="w-32 h-32 mx-auto bg-gray-200 rounded-full mb-6 border-4 border-orange-500 flex items-center justify-center overflow-hidden">
+                        <i class="fas fa-dog text-4xl text-orange-300"></i>
+                    </div>
+                    <h4 class="heading-font text-2xl mb-2">The Half-Chihuahua</h4>
+                    <p class="font-medium">He's half Chihuahua but doesn't look like one at all, which cracks us up every single day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel List -->
+    <section id="travel" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="heading-font text-4xl text-orange-600">WHERE I'VE BEEN</h2>
+                <p class="text-xl font-bold italic mt-2">"Exploring the West & Beyond"</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Garner is Favorite -->
+                <div class="bg-orange-600 text-white p-6 rounded-2xl shadow-lg border-4 border-yellow-400 scale-105 relative z-10">
+                    <div class="absolute -top-4 -right-4 bg-yellow-400 text-orange-900 px-3 py-1 rounded-full text-xs font-black shadow-lg">FAVORITE PARK!</div>
+                    <h3 class="heading-font text-xl mb-4">Garner State Park</h3>
+                    <p class="mb-4 text-sm opacity-90">My absolute favorite park of all time.</p>
+                    <a href="https://tpwd.texas.gov/state-parks/garner" target="_blank" class="font-bold border-b-2 border-white pb-1">Visit Site →</a>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-2xl flex flex-col justify-between hover:bg-orange-50 transition-colors">
+                    <h3 class="font-black text-lg">Zion National Park</h3>
+                    <a href="https://www.nps.gov/zion/index.htm" target="_blank" class="text-orange-600 text-sm font-bold mt-4">Learn More →</a>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-2xl flex flex-col justify-between hover:bg-orange-50 transition-colors">
+                    <h3 class="font-black text-lg">Big Bend National Park</h3>
+                    <a href="https://www.nps.gov/bibe/index.htm" target="_blank" class="text-orange-600 text-sm font-bold mt-4">Learn More →</a>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-2xl flex flex-col justify-between hover:bg-orange-50 transition-colors">
+                    <h3 class="font-black text-lg">Bryce Canyon</h3>
+                    <a href="https://www.nps.gov/brca/index.htm" target="_blank" class="text-orange-600 text-sm font-bold mt-4">Learn More →</a>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-2xl flex flex-col justify-between hover:bg-orange-50 transition-colors">
+                    <h3 class="font-black text-lg">Houston Museum of Natural Science</h3>
+                    <a href="https://www.hmns.org/" target="_blank" class="text-orange-600 text-sm font-bold mt-4">Learn More →</a>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-2xl flex flex-col justify-between hover:bg-orange-50 transition-colors">
+                    <h3 class="font-black text-lg">Mammoth National Historic Site</h3>
+                    <a href="https://www.nps.gov/waco/index.htm" target="_blank" class="text-orange-600 text-sm font-bold mt-4">Waco, TX →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dream Car Footer -->
+    <section class="py-16 bg-black text-white relative overflow-hidden">
+        <div class="absolute right-[-100px] bottom-[-50px] opacity-20 pointer-events-none rotate-12">
+            <i class="fas fa-truck-pickup text-[300px]"></i>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 text-center relative z-10">
+            <h2 class="heading-font text-3xl mb-4 italic tracking-widest text-orange-500">THE DREAM</h2>
+            <p class="text-5xl md:text-6xl font-black mb-2">RAM 2500</p>
+            <p class="text-xl md:text-2xl font-bold text-gray-400 uppercase tracking-tighter">Jet Black | 4-Wheel Drive | Heavy Duty</p>
+        </div>
+    </section>
+
+    <!-- Contact Footer -->
+    <footer id="contact" class="bg-white py-12 border-t-4 border-orange-500">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-6 mb-8 text-3xl text-orange-500">
+                <a href="#" class="hover:scale-110 transition-transform"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:scale-110 transition-transform"><i class="fab fa-snapchat"></i></a>
+                <a href="#" class="hover:scale-110 transition-transform"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="font-bold text-gray-500">© 2026 Portfolio | Always Active</p>
+            <p class="text-xs text-gray-400 mt-2 uppercase tracking-widest">Designed by Gemini</p>
+        </div>
+    </footer>
+
+    <svg style="display:none;">
+        <defs>
+            <pattern id="pattern-circles" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r="1" fill="#fff" />
+            </pattern>
+        </defs>
+    </svg>
+
+</body>
+</html>

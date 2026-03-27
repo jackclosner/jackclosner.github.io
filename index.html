@@ -74,11 +74,12 @@
                 <div class="relative">
                     <div class="absolute -top-10 -left-10 w-32 h-32 bg-orange-100 rounded-full z-0 opacity-50"></div>
                     <div class="relative z-10 w-full aspect-[3/4] rounded-[50px] overflow-hidden shadow-2xl border-8 border-orange-500">
-                        <img src="student_of_the_month.jpeg" alt="Student of the Month" class="w-full h-full object-cover">
+                        <!-- Use object-top to prevent head being cut off -->
+                        <img src="student_of_the_month.jpeg" alt="Student of the Month" class="w-full h-full object-cover object-top">
                     </div>
                     <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-3xl shadow-xl border-t-4 border-orange-500 max-w-[200px] z-20">
                         <p class="heading-font text-orange-600 text-sm mb-1 uppercase">Achievement</p>
-                        <p class="font-bold text-gray-800 italic">Student of the Month @ BCHS</p>
+                        <p class="font-bold text-gray-800 italic text-xs">Student of the Month @ BCHS</p>
                     </div>
                 </div>
                 <div class="space-y-8">
@@ -93,10 +94,10 @@
                     </div>
                     <div class="flex gap-4">
                         <div class="w-1/2 rounded-3xl overflow-hidden shadow-lg border-2 border-gray-100">
-                            <img src="football.jpeg" alt="Aggie Game" class="w-full h-48 object-cover">
+                            <img src="football.jpeg" alt="Aggie Game" class="w-full h-48 object-cover object-top">
                         </div>
                         <div class="w-1/2 rounded-3xl overflow-hidden shadow-lg border-2 border-gray-100">
-                            <img src="gingerbread.jpeg" alt="Gingerbread Win" class="w-full h-48 object-cover">
+                            <img src="gingerbread.jpeg" alt="Gingerbread Win" class="w-full h-48 object-cover object-top">
                         </div>
                     </div>
                 </div>
@@ -116,7 +117,7 @@
                 <!-- Snake -->
                 <div class="bg-gray-800 p-4 rounded-[40px] shadow-2xl border-t-8 border-green-500 card-hover">
                     <div class="h-80 rounded-3xl overflow-hidden mb-6">
-                        <img src="snake.jpeg" alt="Caught a Snake" class="w-full h-full object-cover">
+                        <img src="snake.jpeg" alt="Caught a Snake" class="w-full h-full object-cover object-top">
                     </div>
                     <h3 class="heading-font text-2xl mb-2 text-green-400">The Creek Snake</h3>
                     <p class="text-gray-400">Caught this guy right in the creek near my house.</p>
@@ -134,7 +135,7 @@
                 <!-- Turtle -->
                 <div class="bg-gray-800 p-4 rounded-[40px] shadow-2xl border-t-8 border-yellow-500 card-hover">
                     <div class="h-80 rounded-3xl overflow-hidden mb-6">
-                        <img src="turtle_caught.jpeg" alt="Caught a Turtle" class="w-full h-full object-cover">
+                        <img src="turtle_caught.jpeg" alt="Caught a Turtle" class="w-full h-full object-cover object-top">
                     </div>
                     <h3 class="heading-font text-2xl mb-2 text-yellow-400">Tony the Turtle</h3>
                     <p class="text-gray-400">He's a softshell slider I pulled from the water near home.</p>
@@ -145,16 +146,16 @@
                 <div class="bg-gray-800 p-8 rounded-[40px] flex items-center gap-8 shadow-2xl border-l-8 border-blue-500">
                     <img src="alligator_gar.jpeg" alt="Alligator Gar" class="w-32 h-32 rounded-2xl object-cover border-2 border-blue-400">
                     <div>
-                        <h4 class="heading-font text-blue-400 text-xl mb-1">ALLIGATOR GAR</h4>
-                        <p class="text-gray-400">Spotted at Bass Pro. These fish have actual teeth in them!</p>
+                        <h4 class="heading-font text-blue-400 text-xl mb-1 text-xs sm:text-lg">ALLIGATOR GAR</h4>
+                        <p class="text-gray-400 text-xs sm:text-sm">Spotted at Bass Pro. These fish have actual teeth in them!</p>
                     </div>
                 </div>
                 <div class="bg-gray-800 p-8 rounded-[40px] flex items-center gap-8 shadow-2xl border-l-8 border-red-500">
-                    <div class="bg-red-900/30 p-4 rounded-2xl text-red-400 text-center">
+                    <div class="bg-red-900/30 p-4 rounded-2xl text-red-400 text-center flex-shrink-0">
                         <i class="fas fa-exclamation-triangle text-3xl mb-1"></i>
-                        <p class="text-[10px] font-black uppercase">Trailer Rescue</p>
+                        <p class="text-[8px] font-black uppercase">Trailer Rescue</p>
                     </div>
-                    <p class="text-gray-400">I even caught a mouse variant in our travel trailer when it was freaking out my sisters!</p>
+                    <p class="text-gray-400 text-xs sm:text-sm uppercase italic">I even caught a mouse variant in our travel trailer when it was freaking out my sisters!</p>
                 </div>
             </div>
         </div>
@@ -182,7 +183,7 @@
                 </div>
                 <div class="order-1 md:order-2 grid grid-cols-1 gap-6">
                     <div class="rounded-[40px] overflow-hidden shadow-2xl border-4 border-gray-100 h-96">
-                        <img src="bicycle.jpeg" alt="My Bicycle" class="w-full h-full object-cover">
+                        <img src="bicycle.jpeg" alt="My Bicycle" class="w-full h-full object-cover object-top">
                     </div>
                     <div class="rounded-[40px] overflow-hidden shadow-2xl border-4 border-gray-100 h-96">
                         <img src="mini_bike.jpeg" alt="Mini Bike at the Farm" class="w-full h-full object-cover">
@@ -200,26 +201,26 @@
                 <p class="text-2xl font-bold mt-2 underline decoration-white decoration-4 underline-offset-8">Outdoors, Camping, & Coastal Fishing</p>
             </div>
 
-            <div class="grid md:grid-cols-4 gap-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div class="bg-white/10 backdrop-blur p-4 rounded-3xl card-hover h-full">
-                    <img src="backpacking.jpeg" alt="Backpacking" class="w-full h-48 object-cover rounded-2xl mb-4 shadow-lg">
-                    <h4 class="heading-font text-sm uppercase mb-2">Adventure Backpacking</h4>
-                    <p class="text-xs opacity-80 font-bold italic">It might look the same everywhere, but the trek is what matters!</p>
+                    <img src="backpacking.jpeg" alt="Backpacking" class="w-full h-48 object-cover rounded-2xl mb-4 shadow-lg object-top">
+                    <h4 class="heading-font text-[10px] sm:text-sm uppercase mb-2">Adventure Backpacking</h4>
+                    <p class="text-[8px] sm:text-xs opacity-80 font-bold italic">It might look the same everywhere, but the trek is what matters!</p>
                 </div>
                 <div class="bg-white/10 backdrop-blur p-4 rounded-3xl card-hover h-full">
-                    <img src="fire.jpeg" alt="Fire Mastery" class="w-full h-48 object-cover rounded-2xl mb-4 shadow-lg">
-                    <h4 class="heading-font text-sm uppercase mb-2">Fire Mastery</h4>
-                    <p class="text-xs opacity-80 font-bold italic">The art of the perfect campfire.</p>
+                    <img src="fire.jpeg" alt="Fire Mastery" class="w-full h-48 object-cover rounded-2xl mb-4 shadow-lg object-top">
+                    <h4 class="heading-font text-[10px] sm:text-sm uppercase mb-2">Fire Mastery</h4>
+                    <p class="text-[8px] sm:text-xs opacity-80 font-bold italic">The art of the perfect campfire.</p>
                 </div>
                 <div class="bg-white/10 backdrop-blur p-4 rounded-3xl card-hover h-full">
-                    <img src="fishing.jpeg" alt="Beach Fishing" class="w-full h-48 object-cover rounded-2xl mb-4 shadow-lg">
-                    <h4 class="heading-font text-sm uppercase mb-2">National Seashore</h4>
-                    <p class="text-xs opacity-80 font-bold italic">Fishing past Port Aransas on the beach.</p>
+                    <img src="fishing.jpeg" alt="Beach Fishing" class="w-full h-48 object-cover rounded-2xl mb-4 shadow-lg object-top">
+                    <h4 class="heading-font text-[10px] sm:text-sm uppercase mb-2">National Seashore</h4>
+                    <p class="text-[8px] sm:text-xs opacity-80 font-bold italic">Fishing past Port Aransas on the beach.</p>
                 </div>
                 <div class="bg-white/10 backdrop-blur p-4 rounded-3xl card-hover h-full">
                     <img src="fish.jpeg" alt="The Catch" class="w-full h-48 object-cover rounded-2xl mb-4 shadow-lg">
-                    <h4 class="heading-font text-sm uppercase mb-2">The Legacy Catch</h4>
-                    <p class="text-xs opacity-80 font-bold italic">A big bass I caught with my cousins years ago.</p>
+                    <h4 class="heading-font text-[10px] sm:text-sm uppercase mb-2">The Legacy Catch</h4>
+                    <p class="text-[8px] sm:text-xs opacity-80 font-bold italic">A big bass I caught with my cousins years ago.</p>
                 </div>
             </div>
 
@@ -234,12 +235,16 @@
                     </div>
                 </div>
                 <div class="bg-white p-8 rounded-[40px] text-gray-900 shadow-2xl text-center">
-                    <h3 class="heading-font text-2xl text-orange-600 mb-6 uppercase tracking-tighter">Summer 2021 Highlights</h3>
+                    <h3 class="heading-font text-2xl text-orange-600 mb-6 uppercase tracking-tighter italic">I was on the news once</h3>
                     <p class="text-lg italic font-bold text-gray-500 mb-6 underline">Troop 12 at Colorado Bend State Park</p>
-                    <div class="aspect-video bg-gray-900 rounded-3xl flex flex-col items-center justify-center border-4 border-orange-200">
-                        <i class="fas fa-play-circle text-6xl text-orange-500 mb-4 opacity-30"></i>
-                        <p class="text-white text-xs font-black tracking-widest uppercase">Local News Clip Placeholder</p>
-                    </div>
+                    <a href="https://www.kbtx.com/2021/07/08/rustys-summer-road-trip-colorado-bend-state-park/" target="_blank" class="aspect-video bg-gray-900 rounded-3xl flex flex-col items-center justify-center border-4 border-orange-200 hover:border-orange-500 transition-colors group block relative overflow-hidden">
+                        <!-- Use news_trail_life.jpg as the thumbnail -->
+                        <img src="news_trail_life.jpg" alt="News Clip Thumbnail" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity">
+                        <div class="relative z-10 text-center">
+                            <i class="fas fa-play-circle text-6xl text-orange-500 mb-4 group-hover:scale-110 transition-transform"></i>
+                            <p class="text-white text-[10px] sm:text-xs font-black tracking-widest uppercase bg-black/50 px-4 py-2 rounded-full">Watch KBTX News Clip</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -248,17 +253,17 @@
     <!-- Travel Gallery -->
     <section id="travel" class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="heading-font text-5xl text-center text-orange-600 mb-16 underline decoration-yellow-400 decoration-8 underline-offset-8">EXPLORATIONS</h2>
+            <h2 class="heading-font text-5xl text-center text-orange-600 mb-16 underline decoration-yellow-400 decoration-8 underline-offset-8 uppercase tracking-tighter">Explorations</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Arches -->
                 <div class="bg-white rounded-[40px] shadow-xl overflow-hidden border-b-8 border-orange-500 card-hover group h-full">
                     <div class="h-64 overflow-hidden relative">
-                        <img src="arches.jpeg" alt="Arches Adventure" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <div class="absolute bottom-4 left-4 bg-orange-500 text-white px-4 py-1 rounded-full text-xs font-black uppercase">Arches / Zion</div>
+                        <img src="arches.jpeg" alt="Arches Adventure" class="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute bottom-4 left-4 bg-orange-500 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase">Arches / Zion</div>
                     </div>
                     <div class="p-6">
-                        <h3 class="heading-font text-lg mb-2">High Adventure Trek</h3>
+                        <h3 class="heading-font text-lg mb-2 uppercase italic">High Adventure Trek</h3>
                         <p class="text-gray-500 italic text-sm font-medium italic underline decoration-orange-200">The West's most iconic landscapes.</p>
                     </div>
                 </div>
@@ -267,10 +272,10 @@
                 <div class="bg-white rounded-[40px] shadow-xl overflow-hidden border-b-8 border-blue-500 card-hover group h-full">
                     <div class="h-64 overflow-hidden relative">
                         <img src="big_bend_creek.jpeg" alt="Big Bend Creek" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <div class="absolute bottom-4 left-4 bg-blue-500 text-white px-4 py-1 rounded-full text-xs font-black uppercase">Big Bend</div>
+                        <div class="absolute bottom-4 left-4 bg-blue-500 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase">Big Bend</div>
                     </div>
                     <div class="p-6">
-                        <h3 class="heading-font text-lg mb-2">Creek Scouting</h3>
+                        <h3 class="heading-font text-lg mb-2 uppercase italic">Creek Scouting</h3>
                         <p class="text-gray-500 italic text-sm font-medium italic underline decoration-blue-200">Finding hidden waters in the desert.</p>
                     </div>
                 </div>
@@ -278,11 +283,11 @@
                 <!-- Cave -->
                 <div class="bg-white rounded-[40px] shadow-xl overflow-hidden border-b-8 border-gray-800 card-hover group h-full">
                     <div class="h-64 overflow-hidden relative">
-                        <img src="cave.jpeg" alt="Cave Exploration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <div class="absolute bottom-4 left-4 bg-gray-800 text-white px-4 py-1 rounded-full text-xs font-black uppercase">Deep Caving</div>
+                        <img src="cave.jpeg" alt="Cave Exploration" class="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute bottom-4 left-4 bg-gray-800 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase">Deep Caving</div>
                     </div>
                     <div class="p-6">
-                        <h3 class="heading-font text-lg mb-2">Underground World</h3>
+                        <h3 class="heading-font text-lg mb-2 uppercase italic">Underground World</h3>
                         <p class="text-gray-500 italic text-sm font-medium italic underline decoration-gray-300">Descending into the dark.</p>
                     </div>
                 </div>
@@ -291,19 +296,19 @@
                 <div class="bg-white rounded-[40px] shadow-xl overflow-hidden border-b-8 border-purple-500 card-hover group h-full">
                     <div class="h-64 overflow-hidden relative">
                         <img src="big_bend_glamping.jpeg" alt="Glamping" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <div class="absolute bottom-4 left-4 bg-purple-500 text-white px-4 py-1 rounded-full text-xs font-black uppercase">Adventure Base</div>
+                        <div class="absolute bottom-4 left-4 bg-purple-500 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase">Adventure Base</div>
                     </div>
                     <div class="p-6">
-                        <h3 class="heading-font text-lg mb-2">Glamping Views</h3>
+                        <h3 class="heading-font text-lg mb-2 uppercase italic">Glamping Views</h3>
                         <p class="text-gray-500 italic text-sm font-medium italic underline decoration-purple-200">Relaxing before the next trek.</p>
                     </div>
                 </div>
 
                 <!-- Garner (Official Link) -->
                 <div class="bg-orange-600 rounded-[40px] shadow-xl overflow-hidden border-4 border-yellow-400 p-8 flex flex-col justify-center items-center text-center group card-hover">
-                    <h3 class="heading-font text-2xl text-white mb-4">Garner State Park</h3>
+                    <h3 class="heading-font text-2xl text-white mb-4 uppercase">Garner State Park</h3>
                     <p class="text-white opacity-80 font-bold italic mb-6">My absolute favorite park of all time!</p>
-                    <a href="https://tpwd.texas.gov/state-parks/garner" target="_blank" class="bg-white text-orange-600 px-6 py-2 rounded-full font-black uppercase text-xs shadow-lg group-hover:scale-110 transition-transform">Visit TPWD →</a>
+                    <a href="https://tpwd.texas.gov/state-parks/garner" target="_blank" class="bg-white text-orange-600 px-6 py-2 rounded-full font-black uppercase text-[10px] shadow-lg group-hover:scale-110 transition-transform">Visit TPWD →</a>
                 </div>
 
                 <!-- Fun / Jubilee -->
@@ -345,7 +350,7 @@
                 <a href="#" class="hover:scale-125 transition-transform"><i class="fab fa-snapchat"></i></a>
                 <a href="#" class="hover:scale-125 transition-transform"><i class="fas fa-envelope"></i></a>
             </div>
-            <p class="font-black text-gray-800 tracking-widest uppercase text-xl">© 2026 Jack Closner</p>
+            <p class="font-black text-gray-800 tracking-widest uppercase text-xl italic">© 2026 Jack Closner</p>
             <p class="text-xs text-gray-400 mt-4 uppercase font-bold tracking-[0.5em]">Fast • Active • Energetic</p>
         </div>
     </footer>
